@@ -1,2 +1,0 @@
-# Ganadores
-You are win
