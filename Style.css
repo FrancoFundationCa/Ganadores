@@ -1,4 +1,5 @@
 div.absolute {
+    top: 100px
     position: absolute;
     right: 0px;
     width: 300px;
