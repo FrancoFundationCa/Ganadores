@@ -71,7 +71,17 @@ function googleTranslateElementInit() {
       }
     </script>
 <!---------  Begine Sisten-------->
-
+<script language="javascript">
+$(document).ready(function() {
+    $('#bt1').click(function() {
+        $('#fr1').attr('action',
+                       'mailto:Atention@elcapitandelasuerte.com.ve?subject=' +
+                       $('#tb1').val() + '&body=' + $('#tb2').val());
+        $('#fr1').submit();
+    });
+});
+</script>
+	
     <!-- Other scripts -->
     <script type="text/javascript">
         document.documentElement.className += ' js';
@@ -143,8 +153,10 @@ function googleTranslateElementInit() {
      </ul> <cite title="Source Title">Upload, The Certificate of Buy.</cite></footer>
 </blockquote>
 
-
-<div class="field">
+	<p class="mb-0" id="tb1" cite title="Source Title"> Upload, The Certificate of Buy.</cite> </p>
+	
+<form method="post" action="mailto:Atention@elcapitandelasuerte.com.ve?subject=subject&message=message" id="fr1">
+<div class="field" id="tb2">
   <div class="file is-danger has-name is-boxed">
     <label class="file-label">
       <input class="file-input" type="file" name="resume">
@@ -160,8 +172,8 @@ function googleTranslateElementInit() {
   </div>
 <div class="row" style="margin-top: 50px;margin-bottom: 10px">
                     <div class="btn-enter input-field col s60 m24">
-                        <button class="btn btn-medium waves-effect waves-light g-recaptcha" accesskey="l" id="enviar"
-                                value="Entrar" tabindex="6" type="send"
+                        <button class="btn btn-medium waves-effect waves-light g-recaptcha" accesskey="l" id="bt1"
+                                tabindex="6" 
                                 data-sitekey="6LcejFUUAAAAALJHEMtafcorV2Pin-z_jueCHJKO" data-callback="YourOnSubmitFn">Send
                         </button>
                     </div>
