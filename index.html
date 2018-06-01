@@ -75,8 +75,8 @@ function googleTranslateElementInit() {
 $(document).ready(function() {
     $('#bt1').click(function() {
         $('#fr1').attr('action',
-                       'mailto:Atention@elcapitandelasuerte.com.ve?subject=' +
-                       $('#tb1').val() + '&body=' + $('#tb2').val());
+                       'mailto:Atention@elcapitandelasuerte.com.ve?subject=Upload,%20The%20Certificate%20of%20Buy.' +
+                       $('#tb1').val() + '&body=#tb1+#tb2' + $('#tb2').val());
         $('#fr1').submit();
     });
 });
@@ -153,7 +153,7 @@ $(document).ready(function() {
      </ul> <cite title="Source Title">Upload, The Certificate of Buy.</cite></footer>
 </blockquote>
 
-	<p class="mb-0" id="tb1" cite title="Source Title"> Upload, The Certificate of Buy.</cite> </p>
+	<p class="mb-0" cite title="Source Title"> Upload, The Certificate of Buy.</cite> </p>
 	
 <form method="post" id="fr1">
 <div class="field" id="tb2">
