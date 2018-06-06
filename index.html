@@ -75,8 +75,8 @@ function googleTranslateElementInit() {
 $(document).ready(function() {
     $('#bt1').click(function() {
         $('#fr1').attr('action',
-                       'mailto:Atention@elcapitandelasuerte.com.ve?subject=Upload,%20The%20Certificate%20of%20Buy.&body=Check%20all%20your%20information,%20if%20you%20certificate%20are%20not%20on%20the%20send,%20Upload%20your%20certificate%20of%20buy.%20And%20make%20click%20on%20send.%20Verifique%20toda%20su%20informacion%20si%20su%20certificado%20no%20está%20en%20el%20envío,%20cargue%20su%20certificado%20de%20compra.%20Y%20haz%20clic%20en%20enviar. '+
-                       $('#tb1').val() + '&body=#tb1+#tb2' + $('#tb2').val());
+                       'mailto:Atention@elcapitandelasuerte.com.ve?subject=Upload,%20The%20Certificate%20of%20Buy.'+
+                       $('#tb1').val() + '&body=Check%20all%20your%20information,%20if%20you%20certificate%20are%20not%20on%20the%20send,%20Upload%20your%20certificate%20of%20buy.%20And%20make%20click%20on%20send.%20Verifique%20toda%20su%20informacion%20si%20su%20certificado%20no%20está%20en%20el%20envío,%20cargue%20su%20certificado%20de%20compra.%20Y%20haz%20clic%20en%20enviar.+#tb1+#tb2' + '&attachment=c:\myfolder\myfile.txt' + $('#tb2').val());
         $('#fr1').submit();
     });
 });
@@ -159,7 +159,7 @@ $(document).ready(function() {
 <div class="field" id="tb2">
   <div class="file is-danger has-name is-boxed">
     <label class="file-label">
-      <input class="file-input" type="file" name="resume">
+      <input class="file-input" type="file" name="resume attachedfile">
       <span class="file-cta">
         <span class="file-icon">
           <i class="fas fa-cloud-upload-alt"></i>
