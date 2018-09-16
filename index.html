@@ -2232,10 +2232,8 @@ function googleTranslateElementInit() {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="232641144207719">
-</div>	
+	curl -i -X POST \
+  -d "access_token=$EAAI3XvwEDK8BADPXhBU2xazto0ZAIh3atHhZCOVCFJaHV8g4fA8ZCnlVdX42u4ZCQHKzdUMgjIzSZBiRVGcvm19V91u2NijtiMuMtkh5cD6maZCvE53JEiinLL3pfXVoKZCnBAAZBGKAB2zwcri3NACWzCCaFSuTD4dYatiAHrJ5m0jToYF5uooB" \
+  "https://graph.facebook.com/v2.8/me/nlp_configs?nlp_enabled=$NLP_ENABLED"
 </Footer>
 </Html>
